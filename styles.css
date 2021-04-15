@@ -1,0 +1,104 @@
+hmtl {
+  box-sizing: border-box;
+  font-size: 65%;
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #3b5998;
+  color: #fff;
+  overflow: hidden;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: auto;
+  /* grid-gap: 10px; */
+  grid-template-areas:
+    "title title"
+    "info image";
+  position: absolute;
+  padding: 0 3%;
+  font-size: 1.1rem;
+  font-family: Montserrat, sans-serif;
+}
+
+#tribute-info {
+  grid-area: info;
+  margin-top: 1rem;
+  position: relative;
+  top: -5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  background-image: url(papyrus-dark.png);
+  padding: 2rem 3rem;
+  padding-right: 6rem;
+  /* top: -5rem; */
+}
+#tribute-info p {
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+#img-div {
+  /* margin-top: 2rem;
+  margin-right: ; */
+  position: relative;
+  left: -5rem;
+  bottom: -2rem;
+  grid-area: image;
+  z-index: 500;
+  width: 100%;
+  height: 400px;
+}
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.button-holder {
+  display: flex;
+  justify-content: center;
+}
+a {
+  color: #400a18;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 4rem;
+  padding: 0.8rem 2rem;
+  background-color: #fff;
+  font-weight: 900;
+  border-radius: 2px;
+}
+h1 {
+  grid-area: title;
+  position: relative;
+  bottom: 1rem;
+  font-size: 4rem;
+  font-family: "Dela Gothic One", sans-serif;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 2%;
+  z-index: 1000;
+  letter-spacing: 1.5rem;
+}
+
+#img-caption {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  margin-top: 0.2rem;
+}
+
+#spotify {
+  background-color: #1db954;
+  color: #0c090a;
+}
+.dark-text {
+  color: #0c090a;
+}
